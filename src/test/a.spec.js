@@ -20,6 +20,11 @@ describe("group comment", () => {
 
     })
 
+
+    test("dom test", () => {
+        expect("").toContainHTML("+");
+    });
+
 });
 
 
