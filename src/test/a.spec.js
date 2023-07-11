@@ -1,5 +1,9 @@
 describe("group comment", () => {
 
+    beforeEach(() => {
+
+    });
+
     test("a equal 1", () => {
         var a = 0;
 
@@ -11,6 +15,11 @@ describe("group comment", () => {
     test("test fail", () => {
         throw new Error();
     });
+
+    test.each([10,1])("repeat test", () => {
+
+    })
+
 });
 
 
