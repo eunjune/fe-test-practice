@@ -5,7 +5,7 @@ describe('셀렉트 테스트', () => {
 
     it('요소 가져오기', () => {
         cy.get('.btn').click(); // 요소 가져옴
-        cy.get('p').should('have.class', 'red');
+        cy.get('p').should('have.class', 'red'); // 찾을 때까지 계속 retry. 타임아웃 될때까지 못 찾으면 실패
     });
 
     it('jQuery 사용', () => {
