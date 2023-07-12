@@ -1,4 +1,4 @@
-describe('', () => {
+describe('assertion', () => {
     it('default assertion  ', () => {
         cy.visit('');
         cy.get('button'); // 내부적으로 assertion이 내장됨
