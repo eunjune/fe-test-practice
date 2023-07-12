@@ -23,6 +23,6 @@ describe('셀렉트 테스트', () => {
 
     it.only('find 써보자', () => {
         cy.get('body').click();
-        cy.get('body').find('p').;
+        cy.get('body').find('p').should('have.class','red');
     });
 });
